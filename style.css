@@ -10,12 +10,13 @@ html {
     box-sizing:border-box;
     font-family:'Lato', sans-serif;
     color:var(--dark);
-    height: 100%;
+    height:100%;
 }
 
 body {
+    margin:0;
+    padding:0;
     background:#ccc;
-    margin:30px 50px;
     line-height:1.4;
     min-height: 100%;
     display: grid;
@@ -198,6 +199,10 @@ footer {
     padding:1rem;
 }
 
+.mrl {
+    margin:0 10px;
+}
+
 /* Media Queries */
 @media screen and (max-width:700px){
     .top-container {
@@ -225,7 +230,8 @@ footer {
     }
 }
 
-@media screen and (max-width:500px){
+@media only screen and (max-width : 568px) {
+
     .top-container {
         grid-template-areas:
         'showcase'
